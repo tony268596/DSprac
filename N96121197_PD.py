@@ -9,8 +9,8 @@ def poker(data):
             count += 1
         elif is_valid(stackt, data[0]):
             stackt.append(data.pop(0))
-        elif stackt[0] == count:
-            stackb.append(stackt.pop(0))
+        elif stackt[-1] == count:
+            stackb.append(stackt.pop())
             count += 1
         else:
             return "No"
