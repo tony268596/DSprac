@@ -54,6 +54,3 @@ print("\n")
 
 print("Post")
 postorder(root)
-
-
-

@@ -22,5 +22,5 @@ minflow()
 
 for i in range(int(input())):
     tmp = input()
-    data = [int(_) for _ in tmp.split()]
-    print(path_map[data[0]-1][data[1]-1])
+    data = [int(_)-1 for _ in tmp.split()]
+    print(path_map[data[0]][data[1]])
